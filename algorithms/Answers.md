@@ -40,3 +40,4 @@
     However, if the egg is unbroken at n/2 then move up by adding n/2 and n then dividing by two until an egg is broken. Once an egg is broken add the new floor with the last floor of the unbroken egg and divide by two. Continue until you get to floor f.
 
 ### Exercise III:
+    a & b) Both would fall under O(n log (n)) since they are both best case scenerios. 
