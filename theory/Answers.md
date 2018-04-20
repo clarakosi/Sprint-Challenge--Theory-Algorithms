@@ -1,4 +1,7 @@
-* Single regex that matches either of these: **/(antelopes?)/g**
+Find regexes that match the following. (e.g. find a single regex that matches
+both `antelope` and `antelopes`.)**/(antelopes?)/g**
+
+* Single regex that matches either of these: **/(antelopes?\srocks?\sout)/g**
 
     antelope rocks out
     antelopes rock out
@@ -20,3 +23,7 @@
   1999-1-20
   1999-01-20
   812-2-10
+
+* Come up with regexes for the two above sequences. The one to set the cursor position should accept any digits for the row and column. The bold sequence need only accept 1 (and is a trivial regex). (ESC is a single character which can be represented with \e in the regex.)
+    **/(\e\[)[0-9]\d+;[0-9]\d+[a-z]/gi**
+    **/(\e\[1m)/g**
